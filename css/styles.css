@@ -1,0 +1,153 @@
+:root {
+    --white: #EEE;
+    --gray: #DDD;
+    --button-yellow: #EAC645;
+    --hover-orange: #F2A93B;
+    --logo-orange: #F09135;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    padding-bottom: 2rem;
+}
+
+header,
+section:not(.form-sec) {
+    margin: 6rem auto;
+}
+
+main {
+    margin: auto 4rem;
+}
+
+h1,
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#header-img {
+    max-width: 40rem;
+} 
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar a,
+.purchase-sec a,
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+#email {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.details-sec div {
+    margin-bottom: 4rem;
+}
+
+#submit,
+.purchase-sec a {
+    background-color: var(--button-yellow);
+    padding: 1.4rem;
+    font-weight: 900;
+    transition: background-color 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+#submit {   
+    border: none;
+}
+
+.purchase-sec a {
+    width: 8rem;
+}
+
+#submit:hover,
+.purchase-sec a:hover {
+    background-color: var(--hover-orange);
+    cursor: pointer;
+}
+
+.details-sec div p:first-child {
+    display: none;
+}
+
+.vid-sec {
+    max-width: 70rem;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.purchase-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.purchase-sec h2 {
+    background-color: var(--gray);
+    margin: -2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.purchase-sec p:first-of-type {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+}
+
+.purchase-sec div {
+    border: 1px solid black;
+    width: 30rem;
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--gray);
+    padding: 1rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+footer ul li {
+    margin-left: 1rem;
+}
+
+footer p {
+    text-align: right;
+}

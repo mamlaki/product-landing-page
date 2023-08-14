@@ -4,51 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp - Product Landing Page | Melek Redwan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header id="header">
         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Original Trombones Logo" id="header-img">
         <nav id="nav-bar">
-            <a href="#" class="nav-link">Features</a>
-            <a href="#" class="nav-link">How It Works</a>
-            <a href="#" class="nav-link">Pricing</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how_it_works" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
     </header>
     <main>
         <h1>Handcrafted, home-made masterpieces</h1>
-        <section>
+        <section class="form-sec">
             <form id="form" action="https://www.freeCodeCamp.com/email-submit">
                 <input type="email" id="email" placeholder="Enter your email address">
                 <input type="submit" value="GET STARTED" id="submit">
             </form>
         </section>
-        <section>
+        <section class="details-sec" id="features">
             <div>
                 <p>ICON</p>
                 <div>
                     <h2>Premium Materials</h2>
-                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    <p>
+                        Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+                    </p>
                 </div>
             </div>
+            <hr>
             <div>
                 <p>ICON</p>
                 <div>
-                    <h2>Premium Materials</h2>
-                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    <h2>Fast Shipping</h2>
+                    <p>
+                        We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
                 </div>
             </div>
+            <hr>
             <div>
                 <p>ICON</p>
                 <div>
-                    <h2>Premium Materials</h2>
-                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    <h2>Quality Assurance</h2>
+                    <p>
+                        For every purhcase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+                    </p>
                 </div>
             </div>
         </section>
-        <section>
-            <iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video of Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="vid-sec" id="how_it_works">
+            <iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" width="560" height="315" title="YouTube video of Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen id="video"></iframe>
         </section>
-        <section>
+        <section class="purchase-sec" id="pricing">
             <div>
                 <h2>TENOR TROMBONE</h2>
                 <p><strong>$600</strong></p>
