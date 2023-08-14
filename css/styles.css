@@ -3,7 +3,7 @@
     --gray: #DDD;
     --button-yellow: #EAC645;
     --hover-orange: #F2A93B;
-    --logo-orange: #F09135;
+    --icon-orange: #F09135;
 }
 
 html {
@@ -20,14 +20,24 @@ body {
     padding: 0;
 }
 
-header {
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
     position: sticky;
     top: 0;
     background-color: var(--white);
     padding-bottom: 2rem;
+} 
+
+#nav-bar {
+    display: flex;
+    gap: 2rem;
 }
 
-header,
+#header,
 section:not(.form-sec) {
     margin: 6rem auto;
 }
@@ -68,8 +78,21 @@ footer a:hover {
     width: 25rem;
 }
 
-.details-sec div {
+.details-sec {
+    max-width: 70rem;
+}
+
+.details-sec > div {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
     margin-bottom: 4rem;
+}
+
+.details-sec svg {
+    fill: var(--icon-orange);
+    width: 7rem;
+    display: none;
 }
 
 #submit,
@@ -94,10 +117,6 @@ footer a:hover {
 .purchase-sec a:hover {
     background-color: var(--hover-orange);
     cursor: pointer;
-}
-
-.details-sec div p:first-child {
-    display: none;
 }
 
 .vid-sec {
@@ -140,14 +159,22 @@ footer {
 
 footer ul {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 footer ul li {
     margin-left: 1rem;
 }
 
-footer p {
-    text-align: right;
+@media (min-width: 800px) 
+{
+    .details-sec {
+        text-align: left;
+    }
+
+    .details-sec svg {
+        display: block; 
+    }
 }
